@@ -1,43 +1,41 @@
-FOUAD TOOL — Educational Network Analysis Toolkit
+# FOUAD TOOL
 
-A lightweight, educational project for learning network traffic analysis and building safe, legal lab environments.
-This repository is for research and teaching only. — Use only on datasets and environments you own or where you have explicit permission.
+A lightweight educational toolkit for network analysis.
 
-🔥 What this is
+---
 
-FOUAD TOOL is an educational toolkit and menu-driven interface intended to help students and researchers learn about network traffic, packet analysis, and defensive monitoring techniques.
-It does not provide or enable offensive operations. Any offensive commands that might appear in the original menu are placeholders and should remain disabled in this repository. The primary safe component included is a PCAP analyzer that reads local .pcap files and produces human-readable statistics for research and reporting.
+## Usage
 
-⚠️ Legal & Ethical Notice (READ BEFORE USING)
+Below is an example of how to run the analyzer.  
+(Only run on files you own or have permission to analyze.)
 
-By using this software you agree: you will only run it on files, captures, or test environments that you own or for which you have written permission.
+```bash
+python3 neon_analyzer.py samples/example.pcap
 
-Do NOT use this software to attack, probe, scan, or compromise systems or networks that you do not own or are not authorized to test.
+Example snippet (Python)
 
-The author and contributors are not responsible for misuse. Any illegal or unethical activity is strictly prohibited.
+#!/usr/bin/env python3
+# neon_analyzer.py -- safe PCAP analyzer
+import dpkt, socket
+# ... rest of script ...
 
-This project is intended for educational, defensive, and research purposes only. If you are unsure whether a planned activity is legal, obtain written authorization or consult a legal advisor.
 
-Add this repository to your university submission only after including the required approvals and a description of the safe testbed used (VM images, isolated network, or captive datasets).
+> ملاحظات:
+> - استخدم ```` ```bash``` ```` لعرض أوامر الطرفية بلون مناسب.  
+> - استخدم ```` ```python``` ```` لعرض كود بايثون مع تلوين نحوي على GitHub.  
+> - وضع `---` قبل وبعد الصناديق يساعد على فصل المحتوى بصرياً.
 
-✅ Safe Features
+---
 
-neon_analyzer.py — PCAP analysis script (safe). Reads local .pcap captures and prints:
+## خيار إضافي: قسم قابِل للطي (collapsible) — مفيد لضم الكود تحت عنوان قابل للفتح
+استعمل HTML `details` لعمل قسم مطوي:
 
-total packets, average packet length
+```markdown
+<details>
+<summary>Show example code (click to expand)</summary>
 
-top source/destination IPs
+```python
+# example code here
+print("Hello, neon world")
 
-protocol distribution
-
-most common TCP/UDP destination ports
-
-Menu-driven UI (display-only) for organizing analysis tools and launching safe modules or local viewers.
-
-Documentation, usage examples, and a sample dataset (optional) for teaching.
-
-📥 Requirements
-
-Tested with Python 3.8+.
-
-Python packages:
+</details> ```
